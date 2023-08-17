@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#bg{
+    background-image: url(img/bg.jpg);
+    height: 105vh;
+    background-size: cover;
+    position: relative;
+    animation: animate 5s linear infinite;
+
+
+}
+.content{
+    position: absolute;
+    color: white;
+
+
+}
+.content h1{
+    position: relative;
+    top: 130px;
+    left: 57px;
+}
+.content p{
+    position: absolute;
+    top: 245px;
+    left: 58px;
+    width: 500px;
+
+}
+
+@keyframes animate {
+    0%,100%{
+        background-position: top;
+    }
+    45%,55%{
+        background-position: bottom;
+    }
+}
